@@ -1,0 +1,17 @@
+airbnb:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: QEFYFVQ-BL14192
+      role: ACCOUNTADMIN
+      database: DEV
+      threads: 1
+      warehouse: COMPUTE_WH
+    prod:
+      type: snowflake
+      account: QEFYFVQ-BL14192
+      role: ACCOUNTADMIN
+      database: PROD
+      threads: 1
+      warehouse: COMPUTE_WH
