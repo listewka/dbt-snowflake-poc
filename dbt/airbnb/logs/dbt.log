@@ -1,0 +1,147 @@
+
+
+============================== 03:07:33.230200 | 7b236c33-45cd-4b51-9934-34553eb8c60f ==============================
+[0m03:07:33.230200 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m03:07:33.230991 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/tmp/dbt/logs', 'profiles_dir': '/tmp/dbt/', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt ', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'False'}
+[0m03:07:33.500553 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m03:07:34.014046 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m03:07:34.015500 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m03:07:34.829347 [warn ] [Dummy-1   ]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.airbnb.cleanse
+- models.airbnb
+- models.airbnb.raw
+[0m03:07:34.872786 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:07:34.874506 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:07:34.904227 [info ] [Dummy-1   ]: Found 474 macros
+[0m03:07:34.905889 [warn ] [Dummy-1   ]: Nothing to do. Try checking your model configs and model specification args
+[0m03:07:34.906600 [debug] [Dummy-1   ]: Command end result
+[0m03:07:34.926662 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:07:34.928325 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:07:34.931514 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m03:07:34.933162 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 1.7754695, "process_in_blocks": "0", "process_kernel_time": 0.65, "process_mem_max_rss": "404232", "process_out_blocks": "0", "process_user_time": 4.25}
+[0m03:07:34.933781 [debug] [Dummy-1   ]: Command `cli compile` succeeded at 03:07:34.933525 after 1.78 seconds
+[0m03:07:34.934334 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 03:10:07.895383 | bf1f3f9b-cd3a-4fae-a58d-b0901f7f90b6 ==============================
+[0m03:10:07.895383 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m03:10:07.896314 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/tmp/dbt/logs', 'profiles_dir': '/tmp/dbt/', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt ', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m03:10:08.179419 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m03:10:08.721375 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m03:10:08.894113 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:10:08.894715 [debug] [Dummy-1   ]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:10:08.895795 [warn ] [Dummy-1   ]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.airbnb.raw
+- models.airbnb.cleanse
+- models.airbnb
+[0m03:10:09.016170 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:10:09.018408 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:10:09.055059 [info ] [Dummy-1   ]: Found 474 macros
+[0m03:10:09.056879 [warn ] [Dummy-1   ]: Nothing to do. Try checking your model configs and model specification args
+[0m03:10:09.059111 [debug] [Dummy-1   ]: Command end result
+[0m03:10:09.079481 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:10:09.081914 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:10:09.085558 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m03:10:09.087983 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 1.2689935, "process_in_blocks": "0", "process_kernel_time": 0.93, "process_mem_max_rss": "406860", "process_out_blocks": "0", "process_user_time": 3.63}
+[0m03:10:09.088769 [debug] [Dummy-1   ]: Command `cli compile` succeeded at 03:10:09.088457 after 1.27 seconds
+[0m03:10:09.089390 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 03:12:36.795794 | 5ca9f900-fa51-46b9-917e-81670226d018 ==============================
+[0m03:12:36.795794 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m03:12:36.796791 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt/', 'debug': 'False', 'warn_error': 'None', 'log_path': '/tmp/dbt/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt ', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m03:12:37.084761 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m03:12:37.632589 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m03:12:37.819718 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:12:37.820329 [debug] [Dummy-1   ]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:12:37.821486 [warn ] [Dummy-1   ]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.airbnb.cleanse
+- models.airbnb
+- models.airbnb.raw
+[0m03:12:37.831992 [info ] [Dummy-1   ]: Performance info: /tmp/dbt/target/perf_info.json
+[0m03:12:37.940994 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:12:37.942998 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:12:37.944811 [debug] [Dummy-1   ]: Resource report: {"command_name": "parse", "command_success": true, "command_wall_clock_time": 1.2287695, "process_in_blocks": "0", "process_kernel_time": 0.71, "process_mem_max_rss": "409764", "process_out_blocks": "0", "process_user_time": 3.72}
+[0m03:12:37.945480 [debug] [Dummy-1   ]: Command `cli parse` succeeded at 03:12:37.945215 after 1.23 seconds
+[0m03:12:37.946235 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 03:13:53.476032 | f191d25a-1927-4977-8085-0941c1056450 ==============================
+[0m03:13:53.476032 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m03:13:53.476970 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/tmp/dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/tmp/dbt/', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt ', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'False'}
+[0m03:13:53.759171 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m03:13:54.322179 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m03:13:54.483889 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m03:13:54.484539 [debug] [Dummy-1   ]: Partial parsing enabled, no changes found, skipping parsing
+[0m03:13:54.485641 [warn ] [Dummy-1   ]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 3 unused configuration paths:
+- models.airbnb.cleanse
+- models.airbnb.raw
+- models.airbnb
+[0m03:13:54.602586 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:13:54.604736 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:13:54.653440 [info ] [Dummy-1   ]: Found 474 macros
+[0m03:13:54.655294 [warn ] [Dummy-1   ]: Nothing to do. Try checking your model configs and model specification args
+[0m03:13:54.657504 [debug] [Dummy-1   ]: Command end result
+[0m03:13:54.677642 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:13:54.679737 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:13:54.683199 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m03:13:54.685078 [debug] [Dummy-1   ]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 1.2854077, "process_in_blocks": "0", "process_kernel_time": 0.78, "process_mem_max_rss": "402864", "process_out_blocks": "0", "process_user_time": 3.87}
+[0m03:13:54.685765 [debug] [Dummy-1   ]: Command `cli run` succeeded at 03:13:54.685505 after 1.29 seconds
+[0m03:13:54.686359 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 03:17:58.358792 | f93c38bd-2ea6-4836-8d2a-352dba3cd6a8 ==============================
+[0m03:17:58.358792 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m03:17:58.359848 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/tmp/dbt/logs', 'debug': 'False', 'profiles_dir': '/tmp/dbt/', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt ', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m03:17:58.662172 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m03:17:59.203059 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m03:17:59.382828 [debug] [Dummy-1   ]: Partial parsing enabled: 0 files deleted, 3 files added, 0 files changed.
+[0m03:17:59.383724 [debug] [Dummy-1   ]: Partial parsing: added file: airbnb://models/cleanse/hosts.sql
+[0m03:17:59.384417 [debug] [Dummy-1   ]: Partial parsing: added file: airbnb://models/schema.yml
+[0m03:17:59.385044 [debug] [Dummy-1   ]: Partial parsing: added file: airbnb://models/sources.yml
+[0m03:17:59.993752 [warn ] [Dummy-1   ]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.airbnb.raw
+[0m03:18:00.080578 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:18:00.082846 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:18:00.122702 [info ] [Dummy-1   ]: Found 1 model, 3 sources, 474 macros
+[0m03:18:00.125355 [info ] [Dummy-1   ]: 
+[0m03:18:00.126083 [info ] [Dummy-1   ]: Concurrency: 1 threads (target='dev')
+[0m03:18:00.126709 [info ] [Dummy-1   ]: 
+[0m03:18:00.127660 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
+[0m03:18:00.130040 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DEV_AIRBNB_DBT'
+[0m03:18:00.233647 [debug] [ThreadPool]: Using snowflake connection "list_DEV_AIRBNB_DBT"
+[0m03:18:00.234425 [debug] [ThreadPool]: On list_DEV_AIRBNB_DBT: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "connection_name": "list_DEV_AIRBNB_DBT"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m03:18:00.235031 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m03:18:01.115157 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.880 seconds
+[0m03:18:01.120059 [debug] [ThreadPool]: Using snowflake connection "list_DEV_AIRBNB_DBT"
+[0m03:18:01.120692 [debug] [ThreadPool]: On list_DEV_AIRBNB_DBT: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "connection_name": "list_DEV_AIRBNB_DBT"} */
+show objects in DEV.AIRBNB_DBT
+    limit 10000
+    
+;
+[0m03:18:01.192832 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.071 seconds
+[0m03:18:01.195112 [debug] [ThreadPool]: Using snowflake connection "list_DEV_AIRBNB_DBT"
+[0m03:18:01.195722 [debug] [ThreadPool]: On list_DEV_AIRBNB_DBT: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "connection_name": "list_DEV_AIRBNB_DBT"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m03:18:01.275162 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.079 seconds
+[0m03:18:01.284851 [debug] [Thread-2 (]: Began running node model.airbnb.hosts
+[0m03:18:01.285716 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DEV_AIRBNB_DBT, now model.airbnb.hosts)
+[0m03:18:01.286321 [debug] [Thread-2 (]: Began compiling node model.airbnb.hosts
+[0m03:18:01.295846 [debug] [Thread-2 (]: Writing injected SQL for node "model.airbnb.hosts"
+[0m03:18:01.296822 [debug] [Thread-2 (]: Began executing node model.airbnb.hosts
+[0m03:18:01.297819 [debug] [Thread-2 (]: Finished running node model.airbnb.hosts
+[0m03:18:01.299832 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
+[0m03:18:01.300384 [debug] [Dummy-1   ]: Connection 'model.airbnb.hosts' was properly closed.
+[0m03:18:01.301249 [debug] [Dummy-1   ]: Command end result
+[0m03:18:01.323116 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m03:18:01.325254 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m03:18:01.332665 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m03:18:01.334645 [debug] [Dummy-1   ]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 3.0563865, "process_in_blocks": "0", "process_kernel_time": 0.9, "process_mem_max_rss": "488624", "process_out_blocks": "0", "process_user_time": 4.76}
+[0m03:18:01.335477 [debug] [Dummy-1   ]: Command `cli compile` succeeded at 03:18:01.335166 after 3.06 seconds
+[0m03:18:01.336098 [debug] [Dummy-1   ]: Flushing usage events

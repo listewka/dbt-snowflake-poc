@@ -9,4 +9,4 @@ sources:
         identifier: hosts
 
       - name: reviews
-        identifier: reviews    
+        identifier: reviews
