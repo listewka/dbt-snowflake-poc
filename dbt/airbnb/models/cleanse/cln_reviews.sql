@@ -1,0 +1,16 @@
+WITH RAW_REVIEWS AS
+    (SELECT * FROM {{source('airbnb','reviews')}}
+    )
+SELECT 
+    HASH(LISTING_ID, DATE, REVIEWER_NAME, COMMENTS) AS REVIEW_ID,
+    LISTING_ID,
+    DATE::DATE AS REVIEW_DATE,
+    REVIEWER_NAME,
+    COMMENTS,
+    SENTIMENT,
+    CASE SENTIMENT
+        WHEN 'negative' THEN 1
+        WHEN 'neutral' THEN 5
+        WHEN 'positive' THEN 10
+    END    AS REVIEW_RATE
+FROM RAW_REVIEWS

@@ -1,1 +1,0 @@
-{"_invocation_id": "f93c38bd-2ea6-4836-8d2a-352dba3cd6a8", "linked": {"0": {"name": "source.airbnb.airbnb.listings", "type": "source"}, "1": {"name": "source.airbnb.airbnb.hosts", "type": "source", "succ": [3]}, "2": {"name": "source.airbnb.airbnb.reviews", "type": "source"}, "3": {"name": "model.airbnb.hosts", "type": "model"}}}

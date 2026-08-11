@@ -36,3 +36,6 @@ models:
         +materialized: table
       cleanse:
         +materialized: view
+        +schema: airbnb_cleanse
+      curated:
+        +schema: airbnb_curated
