@@ -1,0 +1,1 @@
+select * from DEV.AIRBNB_cleanse.cln_hosts

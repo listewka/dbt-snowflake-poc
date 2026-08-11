@@ -2308,3 +2308,262 @@ FROM DEV.AIRBNB_DBT_airbnb_cleanse.cln_reviews R
 [0m01:35:40.910604 [debug] [Dummy-1   ]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 11.276356, "process_in_blocks": "0", "process_kernel_time": 0.94, "process_mem_max_rss": "500996", "process_out_blocks": "0", "process_user_time": 4.8}
 [0m01:35:40.911284 [debug] [Dummy-1   ]: Command `cli run` succeeded at 01:35:40.911009 after 11.28 seconds
 [0m01:35:40.911833 [debug] [Dummy-1   ]: Flushing usage events
+
+
+============================== 01:54:56.322374 | c8634fd5-7460-4e29-bec1-ced422c81d9a ==============================
+[0m01:54:56.322374 [info ] [Dummy-1   ]: Running with dbt=1.9.4
+[0m01:54:56.323331 [debug] [Dummy-1   ]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/tmp/dbt_effective_profiles_82s70wv4', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/tmp/dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt ', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m01:54:56.607909 [info ] [Dummy-1   ]: Registered adapter: snowflake=1.9.2
+[0m01:54:57.160628 [debug] [Dummy-1   ]: checksum: 53ed91fada2233efb98368d1716b44ab532c83a9c293cf1890b7905d5b45fb25, vars: {}, profile: , target: dev, version: 1.9.4
+[0m01:54:57.161909 [info ] [Dummy-1   ]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m01:54:58.458966 [warn ] [Dummy-1   ]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.airbnb.raw
+[0m01:54:58.543821 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m01:54:58.545838 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m01:54:58.605711 [info ] [Dummy-1   ]: Found 7 models, 3 sources, 474 macros
+[0m01:54:58.608421 [info ] [Dummy-1   ]: 
+[0m01:54:58.609055 [info ] [Dummy-1   ]: Concurrency: 1 threads (target='dev')
+[0m01:54:58.609596 [info ] [Dummy-1   ]: 
+[0m01:54:58.610340 [debug] [Dummy-1   ]: Acquiring new snowflake connection 'master'
+[0m01:54:58.616710 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DEV'
+[0m01:54:58.777974 [debug] [ThreadPool]: Using snowflake connection "list_DEV"
+[0m01:54:58.778552 [debug] [ThreadPool]: On list_DEV: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "connection_name": "list_DEV"} */
+show terse schemas in database DEV
+    limit 10000
+[0m01:54:58.779020 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:54:59.257004 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 0.478 seconds
+[0m01:54:59.262858 [debug] [ThreadPool]: Using snowflake connection "list_DEV"
+[0m01:54:59.263465 [debug] [ThreadPool]: On list_DEV: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "connection_name": "list_DEV"} */
+show terse schemas in database DEV
+    limit 10000
+[0m01:54:59.263897 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:54:59.710184 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 0.446 seconds
+[0m01:54:59.714718 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_DEV_AIRBNB_curated'
+[0m01:54:59.729303 [debug] [ThreadPool]: Using snowflake connection "list_DEV_AIRBNB_curated"
+[0m01:54:59.729864 [debug] [ThreadPool]: On list_DEV_AIRBNB_curated: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "connection_name": "list_DEV_AIRBNB_curated"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m01:54:59.730330 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:55:00.197435 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.467 seconds
+[0m01:55:00.201938 [debug] [ThreadPool]: Using snowflake connection "list_DEV_AIRBNB_curated"
+[0m01:55:00.202477 [debug] [ThreadPool]: On list_DEV_AIRBNB_curated: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "connection_name": "list_DEV_AIRBNB_curated"} */
+show objects in DEV.AIRBNB_curated
+    limit 10000
+    
+;
+[0m01:55:00.257919 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.055 seconds
+[0m01:55:00.259814 [debug] [ThreadPool]: Using snowflake connection "list_DEV_AIRBNB_curated"
+[0m01:55:00.260420 [debug] [ThreadPool]: On list_DEV_AIRBNB_curated: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "connection_name": "list_DEV_AIRBNB_curated"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m01:55:00.355450 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.094 seconds
+[0m01:55:00.357474 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_DEV_AIRBNB_curated, now list_DEV_AIRBNB_cleanse)
+[0m01:55:00.361278 [debug] [ThreadPool]: Using snowflake connection "list_DEV_AIRBNB_cleanse"
+[0m01:55:00.361785 [debug] [ThreadPool]: On list_DEV_AIRBNB_cleanse: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "connection_name": "list_DEV_AIRBNB_cleanse"} */
+alter session set quoted_identifiers_ignore_case = false;
+[0m01:55:00.362213 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m01:55:00.822627 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.460 seconds
+[0m01:55:00.824663 [debug] [ThreadPool]: Using snowflake connection "list_DEV_AIRBNB_cleanse"
+[0m01:55:00.825168 [debug] [ThreadPool]: On list_DEV_AIRBNB_cleanse: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "connection_name": "list_DEV_AIRBNB_cleanse"} */
+show objects in DEV.AIRBNB_cleanse
+    limit 10000
+    
+;
+[0m01:55:00.883096 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.057 seconds
+[0m01:55:00.885159 [debug] [ThreadPool]: Using snowflake connection "list_DEV_AIRBNB_cleanse"
+[0m01:55:00.885699 [debug] [ThreadPool]: On list_DEV_AIRBNB_cleanse: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "connection_name": "list_DEV_AIRBNB_cleanse"} */
+alter session unset quoted_identifiers_ignore_case;
+[0m01:55:00.976565 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.090 seconds
+[0m01:55:00.985111 [debug] [Thread-2 (]: Began running node model.airbnb.cln_hosts
+[0m01:55:00.986027 [info ] [Thread-2 (]: 1 of 7 START sql view model AIRBNB_cleanse.cln_hosts ........................... [RUN]
+[0m01:55:00.986714 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly list_DEV_AIRBNB_cleanse, now model.airbnb.cln_hosts)
+[0m01:55:00.987287 [debug] [Thread-2 (]: Began compiling node model.airbnb.cln_hosts
+[0m01:55:00.996064 [debug] [Thread-2 (]: Writing injected SQL for node "model.airbnb.cln_hosts"
+[0m01:55:00.996956 [debug] [Thread-2 (]: Began executing node model.airbnb.cln_hosts
+[0m01:55:01.036995 [debug] [Thread-2 (]: Writing runtime sql for node "model.airbnb.cln_hosts"
+[0m01:55:01.038316 [debug] [Thread-2 (]: Using snowflake connection "model.airbnb.cln_hosts"
+[0m01:55:01.038883 [debug] [Thread-2 (]: On model.airbnb.cln_hosts: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "node_id": "model.airbnb.cln_hosts"} */
+create or replace   view DEV.AIRBNB_cleanse.cln_hosts
+  
+   as (
+    with RAW_HOSTS as (
+    SELECT * FROM DEV.airbnb_raw.hosts
+)
+SELECT 
+    ID AS HOST_ID,
+    NAME AS HOST_NAME,
+    IS_SUPERHOST,
+    CREATED_AT,
+    UPDATED_AT
+FROM RAW_HOSTS
+  );
+[0m01:55:01.039384 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:55:01.870359 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.831 seconds
+[0m01:55:01.897688 [info ] [Thread-2 (]: 1 of 7 OK created sql view model AIRBNB_cleanse.cln_hosts ...................... [[32mSUCCESS 1[0m in 0.91s]
+[0m01:55:01.898545 [debug] [Thread-2 (]: Finished running node model.airbnb.cln_hosts
+[0m01:55:01.899198 [debug] [Thread-2 (]: Began running node model.airbnb.cln_listings
+[0m01:55:01.900411 [info ] [Thread-2 (]: 2 of 7 START sql view model AIRBNB_cleanse.cln_listings ........................ [RUN]
+[0m01:55:01.901142 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.airbnb.cln_hosts, now model.airbnb.cln_listings)
+[0m01:55:01.901634 [debug] [Thread-2 (]: Began compiling node model.airbnb.cln_listings
+[0m01:55:01.906212 [debug] [Thread-2 (]: Writing injected SQL for node "model.airbnb.cln_listings"
+[0m01:55:01.907027 [debug] [Thread-2 (]: Began executing node model.airbnb.cln_listings
+[0m01:55:01.911666 [debug] [Thread-2 (]: Writing runtime sql for node "model.airbnb.cln_listings"
+[0m01:55:01.912955 [debug] [Thread-2 (]: Using snowflake connection "model.airbnb.cln_listings"
+[0m01:55:01.913523 [debug] [Thread-2 (]: On model.airbnb.cln_listings: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "node_id": "model.airbnb.cln_listings"} */
+create or replace   view DEV.AIRBNB_cleanse.cln_listings
+  
+   as (
+    with RAW_LISTINGS as (
+    SELECT * FROM DEV.airbnb_raw.listings
+)
+SELECT 
+    ID AS LISTING_ID,
+    NAME AS LISTING_NAME,
+    ROOM_TYPE,
+    MINIMUM_NIGHTS,
+    HOST_ID,
+    PRICE,
+    CREATED_AT,
+    UPDATED_AT
+FROM RAW_LISTINGS
+  );
+[0m01:55:01.914001 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:55:02.683454 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.769 seconds
+[0m01:55:02.686518 [info ] [Thread-2 (]: 2 of 7 OK created sql view model AIRBNB_cleanse.cln_listings ................... [[32mSUCCESS 1[0m in 0.79s]
+[0m01:55:02.687299 [debug] [Thread-2 (]: Finished running node model.airbnb.cln_listings
+[0m01:55:02.687902 [debug] [Thread-2 (]: Began running node model.airbnb.cln_reviews
+[0m01:55:02.689001 [info ] [Thread-2 (]: 3 of 7 START sql view model AIRBNB_cleanse.cln_reviews ......................... [RUN]
+[0m01:55:02.689651 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.airbnb.cln_listings, now model.airbnb.cln_reviews)
+[0m01:55:02.690122 [debug] [Thread-2 (]: Began compiling node model.airbnb.cln_reviews
+[0m01:55:02.694437 [debug] [Thread-2 (]: Writing injected SQL for node "model.airbnb.cln_reviews"
+[0m01:55:02.695126 [debug] [Thread-2 (]: Began executing node model.airbnb.cln_reviews
+[0m01:55:02.699389 [debug] [Thread-2 (]: Writing runtime sql for node "model.airbnb.cln_reviews"
+[0m01:55:02.700700 [debug] [Thread-2 (]: Using snowflake connection "model.airbnb.cln_reviews"
+[0m01:55:02.701266 [debug] [Thread-2 (]: On model.airbnb.cln_reviews: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "node_id": "model.airbnb.cln_reviews"} */
+create or replace   view DEV.AIRBNB_cleanse.cln_reviews
+  
+   as (
+    WITH RAW_REVIEWS AS
+    (SELECT * FROM DEV.airbnb_raw.reviews
+    )
+SELECT 
+    HASH(LISTING_ID, DATE, REVIEWER_NAME, COMMENTS) AS REVIEW_ID,
+    LISTING_ID,
+    DATE::DATE AS REVIEW_DATE,
+    REVIEWER_NAME,
+    COMMENTS,
+    SENTIMENT,
+    CASE SENTIMENT
+        WHEN 'negative' THEN 1
+        WHEN 'neutral' THEN 5
+        WHEN 'positive' THEN 10
+    END    AS REVIEW_RATE
+FROM RAW_REVIEWS
+  );
+[0m01:55:02.701760 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:55:03.295766 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.594 seconds
+[0m01:55:03.301332 [info ] [Thread-2 (]: 3 of 7 OK created sql view model AIRBNB_cleanse.cln_reviews .................... [[32mSUCCESS 1[0m in 0.61s]
+[0m01:55:03.302084 [debug] [Thread-2 (]: Finished running node model.airbnb.cln_reviews
+[0m01:55:03.302684 [debug] [Thread-2 (]: Began running node model.airbnb.hosts_dim
+[0m01:55:03.303861 [info ] [Thread-2 (]: 4 of 7 START sql table model AIRBNB_curated.hosts_dim .......................... [RUN]
+[0m01:55:03.304598 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.airbnb.cln_reviews, now model.airbnb.hosts_dim)
+[0m01:55:03.305100 [debug] [Thread-2 (]: Began compiling node model.airbnb.hosts_dim
+[0m01:55:03.309061 [debug] [Thread-2 (]: Writing injected SQL for node "model.airbnb.hosts_dim"
+[0m01:55:03.309809 [debug] [Thread-2 (]: Began executing node model.airbnb.hosts_dim
+[0m01:55:03.334266 [debug] [Thread-2 (]: Writing runtime sql for node "model.airbnb.hosts_dim"
+[0m01:55:03.335338 [debug] [Thread-2 (]: Using snowflake connection "model.airbnb.hosts_dim"
+[0m01:55:03.335884 [debug] [Thread-2 (]: On model.airbnb.hosts_dim: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "node_id": "model.airbnb.hosts_dim"} */
+create or replace transient table DEV.AIRBNB_curated.hosts_dim
+         as
+        (select * from DEV.AIRBNB_cleanse.cln_hosts
+        );
+[0m01:55:03.336445 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:55:04.766058 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.430 seconds
+[0m01:55:04.769254 [info ] [Thread-2 (]: 4 of 7 OK created sql table model AIRBNB_curated.hosts_dim ..................... [[32mSUCCESS 1[0m in 1.46s]
+[0m01:55:04.769987 [debug] [Thread-2 (]: Finished running node model.airbnb.hosts_dim
+[0m01:55:04.770596 [debug] [Thread-2 (]: Began running node model.airbnb.listings_dim
+[0m01:55:04.771457 [info ] [Thread-2 (]: 5 of 7 START sql table model AIRBNB_curated.listings_dim ....................... [RUN]
+[0m01:55:04.772082 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.airbnb.hosts_dim, now model.airbnb.listings_dim)
+[0m01:55:04.772635 [debug] [Thread-2 (]: Began compiling node model.airbnb.listings_dim
+[0m01:55:04.776689 [debug] [Thread-2 (]: Writing injected SQL for node "model.airbnb.listings_dim"
+[0m01:55:04.777356 [debug] [Thread-2 (]: Began executing node model.airbnb.listings_dim
+[0m01:55:04.781103 [debug] [Thread-2 (]: Writing runtime sql for node "model.airbnb.listings_dim"
+[0m01:55:04.782105 [debug] [Thread-2 (]: Using snowflake connection "model.airbnb.listings_dim"
+[0m01:55:04.782611 [debug] [Thread-2 (]: On model.airbnb.listings_dim: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "node_id": "model.airbnb.listings_dim"} */
+create or replace transient table DEV.AIRBNB_curated.listings_dim
+         as
+        (select 
+    LISTING_ID,
+    LISTING_NAME,
+    ROOM_TYPE,
+    MINIMUM_NIGHTS,
+    PRICE,
+    CREATED_AT,
+    UPDATED_AT 
+from DEV.AIRBNB_cleanse.cln_listings
+        );
+[0m01:55:04.783112 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:55:06.097539 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.314 seconds
+[0m01:55:06.100424 [info ] [Thread-2 (]: 5 of 7 OK created sql table model AIRBNB_curated.listings_dim .................. [[32mSUCCESS 1[0m in 1.33s]
+[0m01:55:06.101146 [debug] [Thread-2 (]: Finished running node model.airbnb.listings_dim
+[0m01:55:06.101705 [debug] [Thread-2 (]: Began running node model.airbnb.review_dim
+[0m01:55:06.102490 [info ] [Thread-2 (]: 6 of 7 START sql table model AIRBNB_curated.review_dim ......................... [RUN]
+[0m01:55:06.103111 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.airbnb.listings_dim, now model.airbnb.review_dim)
+[0m01:55:06.103599 [debug] [Thread-2 (]: Began compiling node model.airbnb.review_dim
+[0m01:55:06.110017 [debug] [Thread-2 (]: Writing injected SQL for node "model.airbnb.review_dim"
+[0m01:55:06.110719 [debug] [Thread-2 (]: Began executing node model.airbnb.review_dim
+[0m01:55:06.114597 [debug] [Thread-2 (]: Writing runtime sql for node "model.airbnb.review_dim"
+[0m01:55:06.115592 [debug] [Thread-2 (]: Using snowflake connection "model.airbnb.review_dim"
+[0m01:55:06.116080 [debug] [Thread-2 (]: On model.airbnb.review_dim: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "node_id": "model.airbnb.review_dim"} */
+create or replace transient table DEV.AIRBNB_curated.review_dim
+         as
+        (SELECT 
+    HASH(LISTING_ID, REVIEW_DATE, REVIEWER_NAME, COMMENTS) AS REVIEW_ID,
+    COMMENTS,
+    SENTIMENT
+FROM DEV.AIRBNB_cleanse.cln_reviews
+        );
+[0m01:55:06.116644 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:55:08.168800 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.052 seconds
+[0m01:55:08.171631 [info ] [Thread-2 (]: 6 of 7 OK created sql table model AIRBNB_curated.review_dim .................... [[32mSUCCESS 1[0m in 2.07s]
+[0m01:55:08.172445 [debug] [Thread-2 (]: Finished running node model.airbnb.review_dim
+[0m01:55:08.173025 [debug] [Thread-2 (]: Began running node model.airbnb.review_event_fact
+[0m01:55:08.173835 [info ] [Thread-2 (]: 7 of 7 START sql table model AIRBNB_curated.review_event_fact .................. [RUN]
+[0m01:55:08.174477 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.airbnb.review_dim, now model.airbnb.review_event_fact)
+[0m01:55:08.174977 [debug] [Thread-2 (]: Began compiling node model.airbnb.review_event_fact
+[0m01:55:08.179590 [debug] [Thread-2 (]: Writing injected SQL for node "model.airbnb.review_event_fact"
+[0m01:55:08.180424 [debug] [Thread-2 (]: Began executing node model.airbnb.review_event_fact
+[0m01:55:08.184565 [debug] [Thread-2 (]: Writing runtime sql for node "model.airbnb.review_event_fact"
+[0m01:55:08.185691 [debug] [Thread-2 (]: Using snowflake connection "model.airbnb.review_event_fact"
+[0m01:55:08.186206 [debug] [Thread-2 (]: On model.airbnb.review_event_fact: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "airbnb", "target_name": "dev", "node_id": "model.airbnb.review_event_fact"} */
+create or replace transient table DEV.AIRBNB_curated.review_event_fact
+         as
+        (SELECT
+    R.REVIEW_ID,
+    R.LISTING_ID,
+    L.HOST_ID,
+    R.REVIEW_RATE,
+    R.REVIEW_DATE
+FROM DEV.AIRBNB_cleanse.cln_reviews R
+    JOIN DEV.AIRBNB_cleanse.cln_listings L
+        USING (LISTING_ID)
+        );
+[0m01:55:08.186713 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m01:55:09.330810 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.144 seconds
+[0m01:55:09.333831 [info ] [Thread-2 (]: 7 of 7 OK created sql table model AIRBNB_curated.review_event_fact ............. [[32mSUCCESS 1[0m in 1.16s]
+[0m01:55:09.334591 [debug] [Thread-2 (]: Finished running node model.airbnb.review_event_fact
+[0m01:55:09.337295 [debug] [Dummy-1   ]: Connection 'master' was properly closed.
+[0m01:55:09.337786 [debug] [Dummy-1   ]: Connection 'list_DEV' was properly closed.
+[0m01:55:09.338196 [debug] [Dummy-1   ]: Connection 'model.airbnb.review_event_fact' was properly closed.
+[0m01:55:09.338833 [info ] [Dummy-1   ]: 
+[0m01:55:09.339439 [info ] [Dummy-1   ]: Finished running 4 table models, 3 view models in 0 hours 0 minutes and 10.73 seconds (10.73s).
+[0m01:55:09.341040 [debug] [Dummy-1   ]: Command end result
+[0m01:55:09.365378 [debug] [Dummy-1   ]: Wrote artifact WritableManifest to /tmp/dbt/target/manifest.json
+[0m01:55:09.367305 [debug] [Dummy-1   ]: Wrote artifact SemanticManifest to /tmp/dbt/target/semantic_manifest.json
+[0m01:55:09.373343 [debug] [Dummy-1   ]: Wrote artifact RunExecutionResult to /tmp/dbt/target/run_results.json
+[0m01:55:09.373917 [info ] [Dummy-1   ]: 
+[0m01:55:09.374582 [info ] [Dummy-1   ]: [32mCompleted successfully[0m
+[0m01:55:09.375163 [info ] [Dummy-1   ]: 
+[0m01:55:09.375714 [info ] [Dummy-1   ]: Done. PASS=7 WARN=0 ERROR=0 SKIP=0 TOTAL=7
+[0m01:55:09.377472 [debug] [Dummy-1   ]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 13.132125, "process_in_blocks": "0", "process_kernel_time": 0.77, "process_mem_max_rss": "493916", "process_out_blocks": "0", "process_user_time": 5.47}
+[0m01:55:09.378068 [debug] [Dummy-1   ]: Command `cli build` succeeded at 01:55:09.377829 after 13.13 seconds
+[0m01:55:09.378549 [debug] [Dummy-1   ]: Flushing usage events

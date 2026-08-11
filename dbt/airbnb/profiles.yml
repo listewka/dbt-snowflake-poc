@@ -6,7 +6,7 @@ airbnb:
       account: QEFYFVQ-BL14192
       role: ACCOUNTADMIN
       database: DEV
-      schema: AIRBNB_DBT
+      schema: AIRBNB
       threads: 1
       warehouse: COMPUTE_WH
     prod:
@@ -14,6 +14,6 @@ airbnb:
       account: QEFYFVQ-BL14192
       role: ACCOUNTADMIN
       database: PROD
-      schema: AIRBNB_DBT
+      schema: AIRBNB
       threads: 1
       warehouse: COMPUTE_WH
