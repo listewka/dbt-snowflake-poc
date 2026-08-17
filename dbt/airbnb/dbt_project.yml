@@ -32,6 +32,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   airbnb:
       +materialized: table
+      +transient: true
       raw:
         +materialized: table
       cleanse:
@@ -39,3 +40,5 @@ models:
         +schema: cleanse
       curated:
         +schema: curated
+        +materialized: table
+        +transient: true
