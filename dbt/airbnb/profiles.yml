@@ -7,7 +7,7 @@ airbnb:
       role: ACCOUNTADMIN
       database: DEV
       schema: AIRBNB
-      threads: 1
+      threads: 8
       warehouse: COMPUTE_WH
     prod:
       type: snowflake
@@ -15,5 +15,13 @@ airbnb:
       role: ACCOUNTADMIN
       database: PROD
       schema: AIRBNB
-      threads: 1
+      threads: 8
+      warehouse: COMPUTE_WH
+    test:
+      type: snowflake
+      account: QEFYFVQ-BL14192
+      role: ACCOUNTADMIN
+      database: TEST
+      schema: AIRBNB
+      threads: 8
       warehouse: COMPUTE_WH
